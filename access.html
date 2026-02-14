@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hollowmind Secure Access</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff88;
+            font-family: Consolas, monospace;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        input {
+            background: black;
+            color: #00ff88;
+            border: 1px solid #00ff88;
+            padding: 10px;
+            font-family: Consolas, monospace;
+        }
+
+        button {
+            background: black;
+            color: #00ff88;
+            border: 1px solid #00ff88;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>HOLLOWMIND INTERNAL ACCESS</h1>
+
+<p>Enter Archive Key:</p>
+
+<input type="text" id="passwordInput">
+<button onclick="checkPassword()">ENTER</button>
+
+<div id="message"></div>
+
+<script>
+function checkPassword() {
+    var input = document.getElementById("passwordInput").value.toLowerCase();
+    var message = document.getElementById("message");
+
+    if (input === "thegate") {
+        message.innerHTML = "Password incomplete.";
+    } 
+    else if (input === "thegateopen") {
+        window.location.href = "memo.html";
+    } 
+    else {
+        message.innerHTML = "Access denied.";
+    }
+}
+</script>
+
+</body>
+</html>
