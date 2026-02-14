@@ -1,5 +1,7 @@
-This is still in development.
+My Project is now available.
 
-Please don't try to play this ARG since it wont work I will update this README when it is up and running.
+I hope you enjoy my ARG!
 
-Note: I am only making this project public at the moment because i need to experiment with github pages.
+Note: It is recommended to play on pc since you will have to view source code using ctrl+u on windows or command+u on mac.
+
+Have Fun!
